@@ -1,0 +1,51 @@
+# Ignore error logs
+error_log
+
+# Ignore robots
+robots.txt
+
+# Ignore root directory folders
+wp-admin/
+wp-includes/
+/wp-*.php
+/xmlrpc.php
+/readme.html
+/license.txt
+/index.php
+/test.php
+
+# Ignore everything in wp-content folder
+wp-content/*
+!wp-content/themes/
+!wp-content/plugins/
+
+# Create exception for chop and child theme
+wp-content/themes/*
+!wp-content/themes/chop
+!wp-content/themes/shop-child
+
+# Create exception for plugins prefixed with Mtc*
+wp-content/plugins/*
+!wp-content/plugins/Mtc*
+
+# Ignore images and data files
+vendor/
+node_modules/
+min/
+cms/files/
+epos_images/
+uploads
+tmp/
+temp/
+csv/
+log/
+logs/
+docs/
+froogle.txt
+404.html
+
+# Ignore cache files and folders
+cache/
+
+# Ignore .well-known
+.well-known

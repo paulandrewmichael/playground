@@ -1,0 +1,48 @@
+module.exports = {
+    root: true,
+    env: {
+        browser: true,
+        node: true,
+    },
+    parserOptions: {
+        parser: '@babel/eslint-parser',
+        requireConfigFile: false,
+    },
+    extends: ['prettier'],
+    plugins: [],
+    // add your custom rules here (https://eslint.org/docs/rules/)
+    rules: {
+        'arrow-parens': ['error', 'always'],
+        'brace-style': ['error', '1tbs', { allowSingleLine: true }],
+        camelcase: 'error',
+        'comma-dangle': ['error', 'always-multiline'],
+        'comma-style': ['error', 'last'],
+        curly: 'error',
+        eqeqeq: ['warn', 'always'],
+        indent: [
+            'error',
+            4,
+            {
+                SwitchCase: 1,
+            },
+        ],
+        'keyword-spacing': 'error',
+        'linebreak-style': ['error', 'unix'],
+        'new-parens': 'error',
+        'no-console': ['error', { allow: ['warn', 'info', 'error'] }],
+        'no-const-assign': 'error',
+        'no-unused-vars': ['error', { args: 'none' }],
+        'no-whitespace-before-property': 'error',
+        'object-curly-spacing': ['error', 'always'],
+        quotes: ['error', 'single', { allowTemplateLiterals: true }],
+        'require-await': 'off',
+        semi: ['error', 'never'],
+        'space-before-blocks': ['error', 'always'],
+        'space-in-parens': ['error', 'never'],
+        strict: ['error', 'never'],
+        'vue/html-indent': ['error', 4],
+        'vue/multi-word-component-names': 0,
+        'vue/no-use-v-if-with-v-for': 'error',
+        'vue/no-v-html': 'off',
+    },
+}
